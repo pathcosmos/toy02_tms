@@ -29,6 +29,7 @@ if (require.main === module) {
     .catch(() => process.exitCode = 1)
     .finally(() => pool.end());
 }
+  
+createOAuthTables();
 
 module.exports = { createOAuthTables };
-

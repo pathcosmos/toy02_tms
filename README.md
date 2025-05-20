@@ -33,4 +33,3 @@ node src/db/createOAuthTables.js
 ```
 
 This script reads `backend/src/db/oauth_tables.sql` and ensures the `oauth_users` and `oauth_tokens` tables exist. The same logic runs during server startup so the tables are present without an extra step.
-
