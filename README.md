@@ -23,3 +23,14 @@ place in `backend/.env` along with the database host and user values.
 
 When the server starts it will attempt to connect to the database and log the
 result.
+
+## OAuth table setup
+
+After configuring the database connection, you can create the tables required for OAuth by running:
+
+```bash
+node src/db/createOAuthTables.js
+```
+
+This script reads `backend/src/db/oauth_tables.sql` and ensures the `oauth_users` and `oauth_tokens` tables exist.
+
