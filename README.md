@@ -33,3 +33,9 @@ node src/db/createOAuthTables.js
 ```
 
 This script reads `backend/src/db/oauth_tables.sql` and ensures the `oauth_users` and `oauth_tokens` tables exist. The same logic runs during server startup so the tables are present without an extra step.
+
+## OAuth login
+
+The backend exposes Google OAuth endpoints under `/auth`. Configure
+`GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` in `backend/.env`. Start the
+frontend and click **OAuth 로그인** to begin the login flow.
