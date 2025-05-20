@@ -4,7 +4,12 @@
   "main": "src/index.jsx",
   "license": "MIT",
   "scripts": {
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development",
+    "build": "webpack",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "analyze": "webpack-bundle-analyzer --mode production"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -15,8 +20,8 @@
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^9.1.2",
     "html-webpack-plugin": "^5.5.0",
-    "webpack": "^5.76.2",
-    "webpack-cli": "^5.0.1",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.13.3"
   }
 }
