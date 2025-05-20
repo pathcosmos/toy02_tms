@@ -26,11 +26,10 @@ result.
 
 ## OAuth table setup
 
-After configuring the database connection, you can create the tables required for OAuth by running:
+After configuring the database connection, the OAuth tables will be created automatically when the backend starts. You can also create them manually by running:
 
 ```bash
 node src/db/createOAuthTables.js
 ```
 
-This script reads `backend/src/db/oauth_tables.sql` and ensures the `oauth_users` and `oauth_tokens` tables exist.
-
+This script reads `backend/src/db/oauth_tables.sql` and ensures the `oauth_users` and `oauth_tokens` tables exist. The same logic runs during server startup so the tables are present without an extra step.
